@@ -1,3 +1,16 @@
 <h1>
   {{title}}
 </h1>
+
+<a (click)="generate()">Generate data</a>
+
+<ngx-datatable style="height: 700px"
+        [rows]="rows"
+        [columns]="columns"
+        [columnMode]="'standard'"
+        [scrollbarV]="true"
+        [scrollbarH]="true"
+        [rowHeight]="30">
+</ngx-datatable>
+
+
